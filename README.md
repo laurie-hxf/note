@@ -70,7 +70,7 @@ note/
 
 ## Notes
 
-- This app currently only support macOS
+- This app currently only support macOS and Win-X86(but still a bit buggy)
 
 - **If you see a “Cannot open the application” warning, please follow [this guide](https://sspai.com/post/27638) to open it manually.** This is due to the lack of an official developer certificate, which is too expensive to obtain.
 
