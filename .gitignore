@@ -1,0 +1,17 @@
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS 文件系统生成的隐藏文件
+.DS_Store
+
+# 环境变量配置文件
+.env

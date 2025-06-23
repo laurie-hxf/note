@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  background: linear-gradient(135deg, #fffbe6 0%, #f0e68c 100%);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;            /* 移除 padding，防止压缩 textarea */
+  max-width: none;       /* 去掉 max-width 限制 */
+  border-radius: 0;      /* 可选，看你是否需要圆角 */
+  background: rgba(255,255,255,0.85);
+  box-shadow: none;      /* 可选 */
+  display: flex;
+  flex-direction: column;
+}
+
+.note-area {
+  width: 90vw;
+  max-width: 900px;
+  min-height: 60vh;
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 18px;
+  color: #222;
+  transition: background 0.2s, font-size 0.2s;
+  outline: none;
+}
+
+.note-area:focus {
+  background: #fffde4;
+}
+
+textarea {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  resize: none;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+  color: #333;
+}
+
+
+textarea:focus {
+  background: #fffde4;
+}
+
+.preview {
+  width: 50%;
+  padding: 32px 24px;
+  background: transparent;
+  overflow-y: auto;
+  box-sizing: border-box;
+  color: #222;
+  word-break: break-all;
+}
+
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .preview h1, .preview h2, .preview h3 {
+  color: #b59a00;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-preview code, .preview code {
+  background: #f8f5c2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 95%;
+}
+
+.markdown-preview pre, .preview pre {
+  background: #f8f5c2;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.markdown-preview blockquote, .preview blockquote {
+  border-left: 4px solid #f0e68c;
+  background: #fffde4;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  color: #888;
+}
+
+.editing textarea {
+  display: block;
+}
+
+.editing .markdown-preview {
+  display: none;
+}
+
+.markdown-preview {
+  min-height: 200px;
+  word-break: break-all;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.tip {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: #bbb;
+  font-size: 13px;
+  user-select: none;
+}
+
+
